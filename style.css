@@ -1,0 +1,117 @@
+
+/*for the body we just need pretty light background image the image is in the project folder*/
+body{
+    background-image: url(beigeback.jpg);
+}
+
+/*for the header we need backgroung image, color for the text, 
+font settings (the font was linked from fonts.google.com)
+and also there is a little modification of the size of the 
+header because the height was not convenient for me
+the image alignement is made in index.html as one of the image attribute*/
+header{
+    background-image: url(blueback.jpeg);
+    color: white;
+    font-weight: 600;
+    font-family:'Playfair Display', serif; ;
+    block-size: 205px;
+}
+
+/*for h1 there is a need of text alignement and a little
+ padding to make more representable text position. 
+ the text color is white in the font from google fonts site*/
+h1{
+    text-align: center;
+    padding: 50px;
+    padding-left: 20px;
+    /*margin-bottom: 50px;*/
+}
+
+/*For div I needed a little background transparency, so I used white color with opacity of 0.5*/
+div{
+    background-color: rgba(255,255,255,0.5);
+}
+
+/*for header2 is basically the same as for the h1 exception is a color which is navy in h2*/
+h2{
+    color: navy;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+
+h3{
+    color:navy;
+    font-family: 'Playfair Display', serif;
+}
+
+/*for paragrafs, I wanted the nice and pretty text in navy color, with pretty font from google fonts site*/
+p{
+    color: navy;
+    line-height: 40px;
+    font-size: 110%;
+    font-family: 'Playfair Display', serif;
+}
+/*for the unordered list I needed to mention that there is no padding on the left side
+ to let list items to start at the bottom-left corner of the header*/
+ul{
+    padding-left: 0px;
+}
+
+/*for the link item I just needed to mention that it is inline block, the text must be centered for the "symetry" and that it has no bullets
+ or other list attributes*/
+li{
+    list-style-type: none;
+    text-align: center;
+    /*color: white;*/
+    display: inline-block;
+    /*padding: 10px 10px 10px 10px;*/
+    /*border: 0px;*/
+    /*cursor: pointer;*/
+    /*margin: 10px 10px 0px 0px;*/
+}
+
+/*I needed the link text in color white and not in violet for both: visited and link states without underlinines
+I played a lot with padding. It was necessairy for th nice positionning of element at the bottom of the header*/
+a, a:visited{
+    display:block;
+    color: white;
+    text-decoration: none;
+    padding: 9px;
+    padding-bottom: 10px;
+    cursor: pointer;    
+}
+
+/*for the hover it is pretty the same as for the rest states Exceptions are about text color and background colors*/
+a:hover{
+    padding: 9px;
+    padding-bottom: 10px;
+    color: navy;
+    text-decoration: none;
+    background-color: beige;
+    border: 0px;
+}
+
+/*Ther footer is colored as the header in blue navy, for the text the color is white and in the font that I chose in google fonts site. But there are no text elements over the footer*/
+footer{
+    background-image: url(blueback.jpeg);
+    color: white;
+    font-weight: 600;
+    font-family:'Playfair Display', serif; ;
+    block-size: 100px;
+}
+
+/*button class is used for elements in footer (anchor tags with images inside them) when we put the mouse on the button there is a little beige padding from a:hover. 
+I did not change that for the reason that it serves very much to better identify if there is a cursor over the element.
+I decded to put all buttons inline. It is more representable. For a little symetry I used margin*/
+.button, .button:visited, .button:hover{
+    display: inline-block;
+    margin: 25px 87px;
+    cursor: pointer;
+    padding: 0px;
+}
+
+
+
+
+
+
